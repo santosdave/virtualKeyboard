@@ -6,6 +6,9 @@ A virtual keyboard with cool effects and key functionalities.
 
 Developed with **HTML**, **CSS**, and **JS** without any dependencies.
 
+#### _View it Live_
+
+> [View](https://wycliffekeyboard.netlify.app/)
 
 ## Credits
 
