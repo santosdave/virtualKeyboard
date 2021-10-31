@@ -11,10 +11,10 @@
 }
 
 :root {
-  --keyboard-bg-color: #00c3b3;
+  --keyboard-bg-color: #962D2D;
   --key-bg-color: #353535;
   --key-color: #fdf6ff;
-  --lock-on-color: #00ae94;
+  --lock-on-color: #962D2D;
   --font-b: 'vr-b', sans-serif;
   --font-m: 'vr-m', sans-serif;
 }
@@ -42,13 +42,13 @@
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
-  background: rgb(0, 137, 150);
+  background: rgb(150, 45, 45);
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(0, 137, 150, 0.7);
+  background: rgba(150, 45, 45, 0.7);
 }
 
 body {
@@ -237,8 +237,8 @@ i.underscore {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   justify-content: center;
-  box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2),
-    0 40px 77px 0 rgba(0, 0, 0, 0.22);
+  box-shadow: 22px 27px 24px 0 rgba(0, 0, 0, 0.2),
+    22px 40px 77px 0 rgba(0, 0, 0, 0.22);
 }
 
 .row {
@@ -271,6 +271,7 @@ i.underscore {
 .color-themes {
   text-align: center;
   font-family: var(--font-m);
+  display: none;
 }
 
 .button-wrapper .button {
@@ -332,7 +333,7 @@ i.underscore {
 
 .notes-wrapper {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .notes-wrapper .title {
@@ -368,11 +369,25 @@ i.underscore {
   display: block;
 }
 
+/* Show Themes */
+.theme-container {
+  text-align: center;
+  padding-top: 20px;
+}
+.theme-container #theme {
+  padding: 5px 25px;
+  width: 250px;
+  background-color: #962D2D;
+}
+.show-themes {
+  display: block;
+}
+
 /* footer */
 
 .footer {
   text-align: center;
-  background: linear-gradient(270deg, #f36b38, #f2354d);
+  background: linear-gradient(270deg, #962D2D, #f2354d);
   background-size: 100% 100%;
   -webkit-animation: gradientFill 8s ease infinite;
   -moz-animation: gradientFill 8s ease infinite;

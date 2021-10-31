@@ -14,7 +14,8 @@ let buttons = document.querySelectorAll('button');
 // learn more
 let info = document.getElementById('info');
 let notes = document.getElementsByClassName('notes')[0];
-
+let themeBtn = document.getElementById('theme');
+let colorThemes= document.getElementsByClassName('color-themes')[0];
 // send GA events
 function trackEvent(action, category, label, value = 0) {
     gtag('event', action, {
@@ -78,6 +79,7 @@ let themeOneElement = document.getElementById('t-1');
 let themeTwoElement = document.getElementById('t-2');
 let themeThreeElement = document.getElementById('t-3');
 let themeFourElement = document.getElementById('t-4');
+let themeFiveElement = document.getElementById('t-5');
 
 let customeElement = document.getElementById('c-t');
 let customToggle = false;
@@ -112,7 +114,7 @@ function hideCustomTheme() {
 }
 
 defaultElement.addEventListener('click', function() {
-    applyTheme('#00c3b3', '#353535', '#f8f8f8', '#00AE94', 'default');
+    applyTheme('#962D2D', '#353535', '#f8f8f8', '#00AE94', 'default');
     hideCustomTheme();
 });
 themeOneElement.addEventListener('click', function() {
@@ -125,6 +127,10 @@ themeTwoElement.addEventListener('click', function() {
 });
 themeThreeElement.addEventListener('click', function() {
     applyTheme('#D5BCA2', '#353535', '#f5f5f5', '#A46F5E', 'rose-gold');
+    hideCustomTheme();
+});
+themeFiveElement.addEventListener('click', function() {
+    applyTheme('#00c3b3', '#353535', '#f8f8f8', '#00AE94', 'strong-cyan');
     hideCustomTheme();
 });
 
@@ -157,6 +163,12 @@ window.addEventListener('keydown', function(e) {
 info.addEventListener('click', function() {
     notes.classList.toggle('show-notes');
     trackEvent('Learn More', 'Information', 'button-click', 3);
+});
+
+// color theme button
+themeBtn.addEventListener('click', function() {
+    colorThemes.classList.toggle('show-themes');
+    trackEvent('Keyboard Theme', 'Information', 'button-click', 3);
 });
 
 // footer name link

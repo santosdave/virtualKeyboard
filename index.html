@@ -38,7 +38,7 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="colorpicker.min.css" />
+    <link rel="stylesheet" href="Assets/css/colorpicker.min.css" />
     <!-- Hotjar  -->
     <script>
       ;(function (h, o, t, j, a, r) {
@@ -84,7 +84,7 @@
         height="60"
         viewBox="0 0 250 250"
         style="
-          fill: #19b7aa;
+          fill: #962D2D;
           color: #fff;
           position: absolute;
           top: 0;
@@ -108,31 +108,37 @@
       </svg>
     </a>
     <main>
-      <div class="color-themes">
-        <h2 class="title">Keyboard Theme</h2>
-        <p class="sub-title">
-          Select any default theme below or generate a custom theme to switch
-          colors
-        </p>
-        <div class="button-wrapper">
-          <button class="button" id="t-0">Default</button>
-          <button class="button" id="t-1">Light</button>
-          <button class="button" id="t-2">Dark</button>
-          <button class="button" id="t-3">Rose Gold</button>
-          <button class="button" id="t-4">Custom</button>
-        </div>
-        <div class="custom-theme" id="c-t">
-          <h3 class="title">
-            Set below 4 properties to develop your custom theme
-          </h3>
-          <div class="cp-wrapper">
-            <button class="button" id="kbc">Keyboard Background Color</button>
-            <button class="button" id="keybc">Key Background Color</button>
-            <button class="button" id="kc">Key Color</button>
-            <button class="button" id="lkc">NCS Key Color</button>
+      <div class="theme-container">
+        <button class="button" id="theme">Keyboard Theme</button>
+        <div class="color-themes">
+         
+          <p class="sub-title">
+            Select any default theme below or generate a custom theme to switch
+            colors
+          </p>
+          <div class="button-wrapper">
+            <button class="button" id="t-0">Default</button>
+            <button class="button" id="t-1">Light</button>
+            <button class="button" id="t-2">Dark</button>
+            <button class="button" id="t-5">Strong Cyan</button>
+            <button class="button" id="t-3">Rose Gold</button>
+            <button class="button" id="t-4">Custom</button>
+          </div>
+          <div class="custom-theme" id="c-t">
+            <h3 class="title">
+              Set below 4 properties to develop your custom theme
+            </h3>
+            <div class="cp-wrapper">
+              <button class="button" id="kbc">Keyboard Background Color</button>
+              <button class="button" id="keybc">Key Background Color</button>
+              <button class="button" id="kc">Key Color</button>
+              <button class="button" id="lkc">NCS Key Color</button>
+            </div>
           </div>
         </div>
+      
       </div>
+      
       <div class="keyboard-container">
         <div class="keyboard">
           <!-- 1st row -->
@@ -371,17 +377,14 @@
 
     
 
-      <div class="notes-wrapper">
-        
-        
-      </div>
+   
 
       <div class="notes">
         <h2 class="title">Information</h2>
         <p>
           <b>Fun Fact:</b> Press any key on this virtual keyboard or on your
           keyboard to hear keypress sound. Try playing with few keys like Caps
-          Lock, Num Lock, Scroll Lock, and F12 and moreover there won't be any
+          Lock, Num Lock, Scroll Lock, Space and F12 and moreover there won't be any
           keypress sound for these keys due to let users know about their unique
           functionality.
         </p>
@@ -396,11 +399,11 @@
     </main>
 
     <footer class="footer">
-      <p class="tech-love">Made with 🖤 using CSS & JavaScript</p>
+      <p class="tech-love">Made with 🖤🖤🖤 using Html, CSS & JavaScript</p>
       <p>
         &copy;2021 <span id="year"></span>
         <a
-          href="https://iamsainikhil.github.io"
+          href="https://wycliffedev.netlify.app/"
           target="_blank"
           id="footer-name"
           >SantosDave&nbsp;Supreme</a
@@ -409,7 +412,7 @@
     </footer>
 
     <script src="Assets/js/index.js"></script>
-    <script src="colorpicker.min.js"></script>
+    <script src="Assets/js/colorpicker.min.js"></script>
     <script>
       var bodyStyles = document.body.style
       let kbc = document.getElementById('kbc')
